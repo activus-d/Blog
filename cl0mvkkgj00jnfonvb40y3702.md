@@ -1,0 +1,91 @@
+---
+title: "Semantics in HTML"
+seoTitle: "SEMANTIC ELEMENTS"
+datePublished: Fri Mar 11 2022 20:32:09 GMT+0000 (Coordinated Universal Time)
+cuid: cl0mvkkgj00jnfonvb40y3702
+slug: semantics-in-html
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1647030642529/NyQixGoH6.png
+tags: frontend, web-design, web-development, webdev, frontend-development
+
+---
+
+## What is Semantics?
+
+Generally, Semantics is that aspect of linguistics that is concerned with meanings in a language. What this means is that semantics deals specifically with messages conveyed by words, statements, or symbols used in a language. That being said, in programming, the meaning of Semantics is not far-fetched. it simply refers to the meaning associated with statements in any programming language or the meaning of any piece of code.
+
+## Semantics in HTML
+
+HTML stands for Hypertext Markup Language. It is the language used to structure a web page and its content. It was originally introduced to share electronic documents, however, as the internet grew, many people became interested in the idea of making web pages more visually presentable. This made most developers concentrate more on how they can position elements across the webpage as layout designs with little or no regard for the semantic purpose of such elements. For example, the `div` element was always used to group elements regardless of whether such groupings are meant to be the header, main, or footer of a webpage:
+
+```plaintext
+<--OLD USAGE-->
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Semantics in HTML</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">This is a Header</div>
+        <div class="main">
+            <div class="section">This is the first section of the page</div>
+            <div class="section2">This is the second section of the page</div>
+        </div>
+        <div class="footer">This is a footer</div>
+    </body>
+```
+
+HTMl5 has gone a long way to further address this major issue by introducing a wide range of structural elements with richer semantic meanings. Examples of these elements include \`\`\`header, main, footer\`\`\`, and several others which would be discussed later in this article(check below for new usage of semantic elements). \`\`\` This is a Header This is the first section of the page This is the second section of the page This is a footer \`\`\` Here is a preview webpage of the above html:
+
+![Screenshot (85).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647017725593/cXZjxWbAW.png align="left")
+
+## Importance of Semantic Elements
+
+The first major importance of semantic elements is that it makes the page easier to read. This is even especially so for someone who is not deeply knowledgeable in the language. Imagine if one would have to read several hundreds of lines of code going through `div` elements and their associated classes before one can understand the purpose of each grouping. Tedious right?
+
+The second importance of semantic elements is the advantage it gives to search engine optimization(SEO) by providing clarity and ensuring that the right pages are delivered for the right queries.
+
+Finally, it helps with greater accessibility. With the recent introduction of assistive technology across most technological platforms and devices, the advantage of semantic elements in this aspect cannot be overemphasized. Semantic elements have generally been accepted as the starting point toward good accessibility practices. It helps these technologies with easy navigation and interpretation of web pages.
+
+## Semantic Elements
+
+Here are some of the Semantic elements introduced by HTML5:
+
+### Main
+
+The `main` HTML element is a container element that has the central or dominant content of a document. The document must not contain more than one `main` element and should not be a child element of an `article`, `aside`, `footer`, `header`, or `nav` element.
+
+### Header
+
+The `header` HTML element is a container element used to represent the introductory aspect of the content of a document. It may contain some heading elements but also a logo, a search form, and other elements. There can be several header elements in one document. However, it cannot be placed within a `footer`, `address`, or another `header` element.
+
+### Nav
+
+The `nav` HTML element is used to contain the navigational content of a webpage. It usually contains navigation links, either within the current document or to other documents. Common examples of the `nav` elements are menus, tables, contents, and indexes. A document may have several `nav` elements, for example, site navigation and one for intra-page navigation.
+
+### Section
+
+The `section` element is a structural HTML element used to group together related elements. Each `section` typically includes one or more heading elements and additional elements presenting related content.
+
+### Article
+
+The article element represents a section of content that forms an independent part of a document or site; for example, a magazine or newspaper article, or a blog entry.
+
+### Figure
+
+The `figure` element in HTML is used to add self-contained content like illustrations, diagrams, photos, or codes listed in a document. It may contain an optional caption which is always specified using the `figcaption` element and can be moved away from the main flow of the document without affecting the document’s meaning.
+
+### Aside
+
+This HTML element is used to identify the contents of a webpage that is related to the primary content of the web page but does not constitute the main intent of the primary page. The `aside` element contains mainly author information, links, related content, and so on.
+
+### Footer
+
+The `footer` HTML element is used to define a footer of HTML document. It contains information such as the author's information, copyright information, carriers, or links to related documents.
+
+![semantic elements.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647017395831/UuWfTv3lW.png align="left")
+
+## Conclusion
+
+As reinforced earlier in this article, semantics is a very important factor to consider when structuring a web page's content. It improves greatly among other things the accessibility and readability of a webpage by humans and machines, hence, it should never be taken for granted.
